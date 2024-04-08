@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tilføjbruger</title>
+</head>
+<body>
+<form action="#" th:action="@{/bruger}" th:object="${bruger}" method="post"></form>
+
+<p>Navn: <input type="text" th:field="*{navn}" /></p>
+
+<p>Mail: <input type="text" th:field="*{mail}"></p>
+
+<p><input type="submit" value="Submit" /> </p>
+
+</body>
+</html>
